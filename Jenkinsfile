@@ -3,12 +3,12 @@ pipeline {
    stages {
       stage('Build') {
         steps {
-         echo 'Building...'
+         bat 'C:\\Users\\Rony\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe HelloPython.py'
         }
    }
    stage('Deploy') {
      steps {
-       echo 'Deploying...'
+       echo 'Deploying'
      }
    }
   }
